@@ -1,8 +1,7 @@
-FROM centos:7
+FROM ubuntu:latest
 MAINTAINER Atul Dadhich "dadhchatul@gmail.com"
-RUN yum -y update && yum clean all
-RUN yum -y install epel-release && yum clean all
-RUN yum -y install python-pip && yum clean all
+RUN apt-get update -y
+RUN apt-get install -y python-pip python-dev build-essential
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirement.txt
