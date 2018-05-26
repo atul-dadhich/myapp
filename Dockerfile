@@ -1,4 +1,4 @@
-FROM python:2
+FROM centos:7
 MAINTAINER Atul Dadhich "dadhchatul@gmail.com"
 COPY . /app
 WORKDIR /app
