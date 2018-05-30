@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/getdate")
 def date_finder():
-    return "I am doing this for Code Pipeline: " + str(datetime.datetime.now())
+    return "I am doing this for Code Pipeline take 1: " + str(datetime.datetime.now())
 
 
 if __name__ == '__main__':
